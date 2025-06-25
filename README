@@ -1,0 +1,29 @@
+# Aplikasi GUI Logika Fuzzy untuk Prediksi Penyaluran Raskin
+
+Aplikasi antarmuka grafis berbasis Python yang mengimplementasikan metode logika fuzzy **Tsukamoto** dan **Mamdani** untuk memprediksi jumlah penyaluran Raskin/Rastra. Aplikasi ini dikembangkan menggunakan `ttkbootstrap` untuk tampilan modern.
+
+## ✨ Fitur
+
+- Antarmuka pengguna modern dengan **ttkbootstrap** (variasi dari Tkinter).
+- Mendukung dua metode fuzzy: **Tsukamoto** dan **Mamdani**.
+- Visualisasi fungsi keanggotaan fuzzy menggunakan **Matplotlib**.
+- Perhitungan fuzzy secara langsung berdasarkan input pengguna.
+
+## 📊 Sistem Fuzzy
+
+Aplikasi menggunakan tiga variabel utama:
+
+- **Input 1**: Pengadaan Beras PSO (Ton)
+- **Input 2**: Jumlah Penduduk Miskin (Juta Jiwa)
+- **Output**: Penyaluran Raskin / Rastra (Ton)
+
+Fungsi keanggotaan fuzzy dibuat secara otomatis berdasarkan nilai **kuartil (Q1 dan Q3)** dari data.
+
+## 📁 Dataset
+
+Dataset bersumber pada laporan tahunan Bulog dan BPS penduduk miskin.
+File Excel bernama **`Laporan Tahunan.xlsx`** berisi kolom:
+
+- `Pengadaan Beras PSO (Ton)`
+- `Jumlah Penduduk Miskin (Jt)`
+- `Penyaluran Raskin / Rastra`
